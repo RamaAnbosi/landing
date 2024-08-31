@@ -79,6 +79,122 @@ background-color:var(--mainColor);
         font-size:14px;
     }
  }
+ .courses{
+    background-color: #fff;
+ }
+.courses .row{
+    gap:40px ;
+}
+
+.course-items{
+    width:60%;
+}
+.course-description{
+    width:30%;
+} 
+.course-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.course{
+    width:calc((100% - 20px) / 2);
+    color: #fff;
+}
+.course img{
+    width: 100%;
+    filter:brightness(50%);
+    display: flex;
+}
+.course-info{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-start;
+}
+.course-info span:last-of-type{
+    align-self: flex-end;
+}
+.course-info span:first-of-type{
+background-color: var(--mainColor);
+padding: 5px;
+}
+.course-card{
+    position: relative;
+}
+.course-details{
+  color:#000;
+}
+.course-details .row:nth-child(2){
+    justify-content: flex-start;
+    color:#969696;
+  
+}
+.course-details .views{
+    color: var(--mainColor);
+    font-size: small;
+}
+.courses .row:first-of-type{
+    align-items: flex-start;
+}
+.course-description{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    gap:40px;
+}
+.course-description h2{
+    width: 150px;
+    height: 50px;
+}
+ .course-description p:first-of-type{
+  line-height: 12px;
+  color: var(--mainColor);
+ }
+
+ .course-description p:last-of-type{
+    width: 50%;
+    color:#969696;
+   }
+
+   .course-description a{
+    width: 51px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   font-family:var(--subFont);
+   border-radius: 15px;
+   padding: 5.3541765213012695px 30.18113136291504px;
+   border:2px solid var(--mainColor);
+   font-weight:700;
+   color:#fff;
+   background-color:var(--mainColor);
+   }
+   
+   @media screen and  (max-width:768px){
+    .course-items{
+        width: 100%;
+    }
+    .course-info span {
+        display:none;
+       }
+       .course-description {
+        width: 100%;
+       }
+ }
+
+   @media screen and (max-width:576px){
+    .course-items h2{
+        font-size: medium;
+    }
+     
+ }
+ 
 
  .testimonials{
     padding: 50px 0;
